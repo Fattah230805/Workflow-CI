@@ -1,0 +1,22 @@
+artifact_path: file:///c:/Users/Muhammad Fattah/Downloads/Workflow-CI/MLProject/mlruns/0/models/m-bf243f7780fa412ab606ad1c7645cad5/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.3
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+mlflow_version: 3.8.0
+model_id: m-bf243f7780fa412ab606ad1c7645cad5
+model_size_bytes: 7293948
+model_uuid: m-bf243f7780fa412ab606ad1c7645cad5
+prompts: null
+run_id: 19a23b86d0d945d892ef0cfe94d82514
+utc_time_created: '2025-12-24 16:07:51.854971'

@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 import mlflow
 import mlflow.sklearn
@@ -5,7 +6,10 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import root_mean_squared_error, r2_score
 
-df = pd.read_csv("data/preprocess.csv")
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_PATH = os.path.join(BASE_DIR, "data", "preprocess.csv")
+df = pd.read_csv("DATA_PATH")
 
 X = df.drop("House_Price", axis=1)
 y = df["House_Price"]

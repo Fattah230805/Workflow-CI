@@ -1,11 +1,11 @@
 name: mlflow-env
 channels:
-  - conda-forge
+  - defaults
 dependencies:
-  - python=3.10
+  - python=3.11
   - pip
+  - pandas
+  - scikit-learn
+  - mlflow
   - pip:
-      - mlflow
-      - scikit-learn
-      - pandas
-      - numpy
+      - cloudpickle==2.2.1

@@ -1,4 +1,4 @@
-name: house-price-ci
+name: HousePricePrediction
 
 conda_env: conda.yaml
 

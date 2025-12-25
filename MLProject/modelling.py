@@ -9,7 +9,7 @@ from sklearn.metrics import root_mean_squared_error, r2_score
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_PATH = os.path.join(BASE_DIR, "data", "preprocess.csv")
-df = pd.read_csv("DATA_PATH")
+df = pd.read_csv(DATA_PATH)
 
 X = df.drop("House_Price", axis=1)
 y = df["House_Price"]
